@@ -4,3 +4,17 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
+// .container {
+//   width: 100%;
+//   padding-inline: 1rem;
+//   margin-inline: auto;
+// }
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
