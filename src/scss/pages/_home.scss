@@ -1,0 +1,46 @@
+@use "../base/variables";
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    &-info {
+      width: 65%;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 10px #8c393980;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__rrss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1.5rem;
+  }
+}
+
+// @keyframes bgAnimation {
+//   0% {
+//     transform: scale(1) translate(0, 0);
+//   }
+//   100% {
+//     transform: scale(1.12) translate(-1%, -1%);
+//   }
+// }
