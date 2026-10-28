@@ -1,10 +1,11 @@
 .footer {
-  padding: 3rem 0;
+  padding: 5rem 0;
   &__container {
     display: flex;
     justify-content: space-between;
 
     ul {
+      margin: 0;
       li {
         color: rgb(112, 111, 111);
         font-weight: 600;
