@@ -1,1 +1,18 @@
+.footer {
+  padding: 3rem 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
 
+    ul {
+      li {
+        color: rgb(112, 111, 111);
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.list-item {
+  margin-top: 2rem;
+}

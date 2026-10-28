@@ -9,10 +9,15 @@ ul {
   list-style: none;
   padding: 0;
 }
-
+h2 {
+  margin: 0;
+}
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1300px;
   padding-inline: 1rem;
   margin-inline: auto;
+}
+a {
+  text-decoration: none;
 }
