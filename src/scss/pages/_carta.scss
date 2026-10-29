@@ -1,0 +1,69 @@
+@use "../base/variables";
+
+.carta {
+  padding-top: 150px;
+  h1 {
+    margin: 0;
+  }
+  &__tabs-content {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.7rem;
+
+      &-card {
+        border-radius: 15px;
+        background-color: variables.$bg;
+        padding: 1rem;
+        .price {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  .tab-link {
+    font-weight: 400;
+    border-radius: 0;
+    border-color: transparent;
+    background-color: rgba(variables.$secondary, 0.2);
+    box-shadow: none;
+    &:hover {
+      border-bottom: solid 2px variables.$primary;
+      background-image: url("../img/bg-ruido-darkcream.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:active {
+      font-weight: 600;
+    }
+  }
+}
+.tab-active {
+  font-weight: 600;
+  background-image: url("../img/bg-ruido-darkcream.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carta__tabs-content {
+  display: none;
+
+  &.tabs-content-active {
+    display: block;
+  }
+}
+.tabs-container {
+  margin-top: 2rem;
+}

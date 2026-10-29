@@ -1,3 +1,7 @@
 import '@fortawesome/fontawesome-free/js/all.min.js';
 
-console.log("holii");
+
+const tabs = document.querySelectorAll(".tab-link"); //enlaces
+
+const content = document.querySelectorAll(".carta__tabs-content"); //contenido
+

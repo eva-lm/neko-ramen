@@ -1,38 +1,245 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neko Ramen</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="./scss/main.scss">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Yuji+Boku&display=swap" rel="stylesheet">
-<script type="module" src="./index.js"></script>
-
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
+    <div class="vh-100">
       <include src="src/header.html"></include>
-  <main>
-    <div class="container">
-      <article class="carta">
-
-        <h2 class="font-accent">Carta</h2>
-        <section>
+      <main>
+        <div class="container">
+          <article class="carta">
+            <h1>Carta</h1>
+            <div class="border-decorative-title"></div>
+            <section>
+              <!-- <div>
     <div class="img-container">
-      <img src="./img/6Recurso 3.svg" alt="plato de miso ramen" width="270" />
-      
+      <img src="./img/6Recurso 3.svg" alt="plato de miso ramen" width="70" />    
     </div>
-    <div>
-      <p> mimimi.</p>
-  <button class="button-secondary">    <a href="">Ver carta</a></button>
-    </div>
-  </section>
+      <p> mimimi mimi mimimimi mimimimimimi mmiiiii!!!.</p>  
+    </div> -->
 
-</article>
-</div>
-  </main>
-   <include src="src/footer.html"></include>
+              <div class="tabs" role="tablist">
+                <button
+                  class="tab-link link-primary tab-active"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="sugerencias"
+                  data-tab="sugerencias"
+                >
+                  Sugerencias
+                </button>
+                <button
+                  class="tab-link"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="entrantes"
+                  data-tab="entrantes"
+                >
+                  Entrantes
+                </button>
+                <button
+                  class="tab-link"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="ramen"
+                  data-tab="ramen"
+                >
+                  Ramen
+                </button>
+                <button
+                  class="tab-link"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="vegan"
+                  data-tab="vegan"
+                >
+                  Vegan
+                </button>
+                <button
+                  class="tab-link"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="bebidas"
+                  data-tab="bebidas"
+                >
+                  Bebidas
+                </button>
+                <button
+                  class="tab-link"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="postres"
+                  data-tab="postres"
+                >
+                  Postres
+                </button>
+              </div>
+
+              <div class="tabs-container">
+                <!-- sugerencias -->
+                <div
+                  class="carta__tabs-content tabs-content-active bg-ruido-darkcream"
+                  id="sugerencias"
+                >
+                  <div class="carta__tabs-content-grid">
+                    <div class="carta__tabs-content-grid-card">
+                                            <div class="img-container">
+                        <img
+                          src="./img/ramen-chef.png"
+                          alt="ramen receta del chef"
+                          height="200"
+                        />
+                      </div>
+                      <h2>Chef's Special Ramen</h2>
+                      <p>
+                        Nuestro tazón insignia con triple caldo, cerdo asado a fuego lento durante 15 horas y toppings
+                        premium.
+                      </p>
+                      <span class="price">15,50€</span>
+                    </div>
+
+                    <div class="carta__tabs-content-grid-card">
+                                                                  <div class="img-container">
+                        <img
+                          src="./img/ramen-garlic.png"
+                          alt="ramen de ajo negro"
+                          height="200"
+                        />
+                      </div>
+                      <h2>Kuro Black Garlic Ramen</h2>
+                      <p>
+                        Caldo Tonkotsu enriquecido con aceite Mayu (ajo negro
+                        quemado artesanal), fideos finos, panceta Chashu
+                        glaseada, huevo ajitama marinado y brotes de bambú.
+                      </p>
+                      <span class="price">16,80€</span>
+                    </div>
+
+                    <div class="carta__tabs-content-grid-card">
+                      <div class="img-container">
+                        <img
+                          src="./img/ramen-ebi.png"
+                          alt="ramen de gamba y curry"
+                          height="200"
+                        />
+                      </div>
+                      <h2>Ebi Katsu Curry Ramen</h2>
+                      <p>
+                        Fusión de caldo aromático de curry japonés y dashi,
+                        coronado con langostinos crujientes rebozados en panko,
+                        cebolleta tierna y narutomaki.
+                      </p>
+                      <span class="price">13,20€</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  Entrantes -->
+                <div class="carta__tabs-content" id="entrantes">
+                  <div class="carta__tabs-content-grid">
+                    <div class="carta__tabs-content-grid-card">
+                      <h2>Gyoza de Cerdo (5 uds)</h2>
+                      <p>
+                        Empanadillas japonesas tostadas a la plancha con salsa
+                        casera.
+                      </p>
+                      <span class="price">6,20€</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ramen -->
+                <div class="carta__tabs-content" id="ramen">
+                  <div class="carta__tabs-content-grid">
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Tonkotsu Ramen</h3>
+                      <p>
+                        Caldo cremoso de cerdo cocinado durante 16 horas con
+                        fideos finos.
+                      </p>
+                      <span class="price">13,90€</span>
+                    </div>
+
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Miso Ramen</h3>
+                      <p>
+                        Con delicioso caldo tradicional de miso japonés y pollo
+                        marinado con noodles de huevo.
+                      </p>
+                      <span class="price">15,90€</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Vegan -->
+
+                <div class="carta__tabs-content" id="vegan">
+                  <div class="carta__tabs-content-grid">
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Creamy Vegan Ramen</h3>
+                      <p>
+                        Caldo de sésamo y miso blanco con tofu marinado y setas
+                        shiitake.
+                      </p>
+                      <span class="price">13,50€</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="carta__tabs-content" id="bebidas">
+                  <div class="carta__tabs-content-grid">
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Cerveza Kirin</h3>
+                      <p>La cerveza mas vendida de Japón.</p>
+                      <span class="price">13,90€</span>
+                    </div>
+
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Cerveza Sapporo</h3>
+                      <p>Cerveza rubia japonesa, suave y refrescante.</p>
+                      <span class="price">3,50€</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="carta__tabs-content" id="postres">
+                  <div class="carta__tabs-content-grid">
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Cerveza Kirin</h3>
+                      <p>La cerveza mas vendida de Japón.</p>
+                      <span class="price">13,90€</span>
+                    </div>
+
+                    <div class="carta__tabs-content-grid-card">
+                      <h3>Mochis Artesanales (2 uds)</h3>
+                      <p>
+                        Tradicional pastel de arroz relleno de té verde o
+                        chocolate.
+                      </p>
+                      <span class="price">4,50€</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </main>
+      <include src="src/footer.html"></include>
+    </div>
   </body>
 </html>

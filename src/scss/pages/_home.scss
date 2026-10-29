@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     gap: 1rem;
     color: variables.$primary;
     ul {
@@ -89,12 +89,16 @@
     }
     &:nth-of-type(odd) {
       background-image: url("../img/bg-ruido-mediumcream.png");
-      padding-right: 5rem;
     }
     &:nth-of-type(even) {
       background-image: url("../img/bg-ruido-cream.png");
       border-top: solid 1px variables.$secondary;
       border-bottom: solid 1px variables.$secondary;
+    }
+    &:nth-of-type(odd) &-text {
+      padding-right: 5rem;
+    }
+    &:nth-of-type(odd) &-text {
       padding-left: 5rem;
     }
     h2 {
