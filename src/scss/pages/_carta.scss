@@ -21,12 +21,13 @@
         flex-direction: column;
         justify-content: space-between;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        &-link {
+          display: flex;
+          justify-content: space-between;
+        }
         .price {
           font-size: 1.3rem;
           font-weight: 600;
-        }
-        .img-container {
-          //transform: translateY(-45);
         }
       }
     }

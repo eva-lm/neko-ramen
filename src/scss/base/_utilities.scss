@@ -70,8 +70,10 @@ span {
 .w-100 {
   width: 100%;
 }
-.vh-100 {
-  min-height: 100vh;
+@media (width >= 1200px) {
+  .vh-100 {
+    min-height: 100vh;
+  }
 }
 .border-decorative-title {
   height: 0.4rem;

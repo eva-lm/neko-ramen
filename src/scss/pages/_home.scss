@@ -17,11 +17,12 @@
       background-repeat: no-repeat;
       background-size: cover;
       padding: 2.5rem;
-      border-radius: 15px 0 0 15px;
+      border-radius: 15px;
       // border: solid 1px variables.$secondary;
     }
+
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       margin: 0;
       text-shadow: 2px 2px 10px #8c393980;
       text-transform: uppercase;
@@ -35,16 +36,11 @@
       flex: 2;
       padding: 1rem;
       border-radius: 0 15px 15px 0;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
+      display: none;
       background-image: url("../img/bg-ruido-darkcream.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      // border-top: solid 1px variables.$secondary;
-      // border-right: solid 1px variables.$secondary;
-      // border-bottom: solid 1px variables.$secondary;
       img {
         max-height: 100%;
         object-fit: contain;
@@ -75,31 +71,28 @@
   margin-top: 5rem;
   &__info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    gap: 2.5rem;
     width: 100%;
 
     &:nth-of-type(1) {
       margin-top: 5rem;
     }
     &:nth-of-type(odd) {
-      background-image: url("../img/bg-ruido-mediumcream.png");
+      background-image: url("../img/bg-ruido-cream.png");
     }
     &:nth-of-type(even) {
-      background-image: url("../img/bg-ruido-cream.png");
+      background-image: url("../img/bg-ruido-mediumcream.png");
       border-top: solid 1px variables.$secondary;
       border-bottom: solid 1px variables.$secondary;
     }
-    &:nth-of-type(odd) &-text {
-      padding-right: 5rem;
-    }
-    &:nth-of-type(odd) &-text {
-      padding-left: 5rem;
+    &-text {
+      padding: 2rem;
     }
     h2 {
       font-size: 2.7rem;
@@ -109,6 +102,18 @@
     }
     p {
       margin-bottom: 3rem;
+    }
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+      }
     }
   }
 }
@@ -120,5 +125,45 @@
   img {
     max-height: 100%;
     object-fit: contain;
+  }
+}
+
+@media (width >= 768px) {
+  .hero {
+    &__content {
+      &-info {
+        border-radius: 15px 0 0 15px;
+        img {
+          height: 80px;
+        }
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      .img-container {
+        display: flex;
+        border-radius: 0 15px 15px 0;
+      }
+    }
+  }
+
+  .home {
+    .frase-img {
+      height: 130px;
+    }
+    .img-container {
+      height: 350px;
+      width: 100%;
+      max-width: 500px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
